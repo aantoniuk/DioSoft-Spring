@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <!-- <bean id="helloWorldSingleton" class="org.diosoft.spring.helloWorld.HelloWorldSingleton" scope="singleton" init-method="customInit" destroy-method="customDestroy">
+       <property name="message" value="Hello World!"/>
+   </bean>
+   
+    <bean id="helloWorldPrototype" class="org.diosoft.spring.helloWorld.HelloWorldPrototype" scope="prototype" init-method="customInit" destroy-method="customDestroy">
+       <property name="message" value="Hello World!"/>
+   </bean>-->
+   
+   <bean id="one" class="org.diosoft.spring.helloWorld.HiOne" init-method="init" destroy-method="customDestroy" scope="prototype">
+   		<property name="one" value="any one"/>
+   </bean>
+   
+   <bean id="one2" class="org.diosoft.spring.helloWorld.HiOne" init-method="init" destroy-method="customDestroy" scope="singleton">
+   		<property name="one" value="any one"/>
+   </bean>
+
+</beans>
