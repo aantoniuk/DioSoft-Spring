@@ -1,0 +1,32 @@
+*.class
+
+# Eclipse
+
+.metadata/
+
+
+# RAD
+
+.apt_generated/
+
+
+
+# Intellij
+
+.idea/
+*.iml
+*.iws
+*.ipr
+*.idea
+
+# Web
+
+/WebContent/WEB-INF/classes/**
+
+
+# Build Artifacts
+
+.gradle/
+/build/**
+/target/**
+bin/
