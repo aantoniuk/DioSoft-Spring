@@ -1,4 +1,4 @@
-package org.diosoft.spring.observer;
+package org.diosoft.spring.lesson2;
 
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.support.GenericBeanDefinition;
@@ -13,7 +13,7 @@ public class MainApp {
 		// create ApplicationContext
 		@SuppressWarnings("resource")
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext(
-				"observer-config.xml");
+				"lesson2-config.xml");
 		context.registerShutdownHook();
 		DefaultListableBeanFactory beanFactory = (DefaultListableBeanFactory) context.getBeanFactory();
 		
@@ -28,7 +28,7 @@ public class MainApp {
 		// register Person Bean
 		beanFactory.registerBeanDefinition("person", beanDefinition);
 		
-		System.out.println("----------------------------create bean objects");
+		System.out.println("----------------------------create bean's objects");
 
 		// create message
 		Message message = new Message("Hello");

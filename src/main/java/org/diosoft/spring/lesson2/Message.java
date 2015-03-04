@@ -1,4 +1,4 @@
-package org.diosoft.spring.observer;
+package org.diosoft.spring.lesson2;
 
 public class Message {
 

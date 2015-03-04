@@ -26,7 +26,6 @@
 
 # Build Artifacts
 
-.gradle/
 /build/**
 /target/**
-bin/
+*/bin/*
