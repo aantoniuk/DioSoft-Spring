@@ -1,4 +1,4 @@
-package org.diosoft.spring.lesson4.workout;
+package org.diosoft.spring.lesson4.profiles;
 
 import org.diosoft.spring.lesson4.Person;
 import org.diosoft.spring.lesson4.Postman;
@@ -17,7 +17,7 @@ public class MainApp {
 
         // ApplicationContext with XML
 //		AbstractApplicationContext context = new ClassPathXmlApplicationContext(
-//				"lesson4-workout-config.xml");
+//				"lesson4-profiles-config.xml");
         // ApplicationContext with Annotation
         AbstractApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 

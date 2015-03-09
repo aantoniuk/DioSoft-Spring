@@ -1,4 +1,4 @@
-package org.diosoft.spring.lesson4.workout;
+package org.diosoft.spring.lesson4.profiles;
 
 import org.diosoft.spring.lesson4.PersonEventListener;
 import org.diosoft.spring.lesson4.Postman;
@@ -16,7 +16,7 @@ import java.util.List;
  * Created by tolikgag on 09.03.2015.
  */
 @Configuration
-@PropertySource("classpath:/lesson4-workout.properties")
+@PropertySource("classpath:/lesson4-profiles.properties")
 public class AppConfig {
 
     @Autowired

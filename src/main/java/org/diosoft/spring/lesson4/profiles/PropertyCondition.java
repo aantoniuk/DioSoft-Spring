@@ -1,4 +1,4 @@
-package org.diosoft.spring.lesson4.workout;
+package org.diosoft.spring.lesson4.profiles;
 
 import org.springframework.context.annotation.ConditionContext;
 import org.springframework.context.annotation.ConfigurationCondition;

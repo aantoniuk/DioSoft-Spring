@@ -15,7 +15,7 @@
 
 
     <bean class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer">
-        <property name="location" value="lesson4-workout.properties"></property>
+        <property name="location" value="lesson4-profiles.properties"></property>
     </bean>
 
     <util:list id="personNameList">
