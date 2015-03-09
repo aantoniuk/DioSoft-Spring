@@ -1,16 +1,16 @@
 package org.diosoft.spring.lesson3;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MainApp {
 
 	public static void main(String[] args) {
-
-		@SuppressWarnings("resource")
-		AbstractApplicationContext context = new ClassPathXmlApplicationContext(
-				"lesson3-config.xml");
-        context.registerShutdownHook();
+            // ApplicationContext with XML
+//		AbstractApplicationContext context = new ClassPathXmlApplicationContext(
+//				"lesson3-config.xml");
+            // ApplicationContext with Annotation
+        AbstractApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         //single postman
         System.out.println("Single Postman");
