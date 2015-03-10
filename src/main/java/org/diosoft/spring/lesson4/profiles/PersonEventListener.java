@@ -1,9 +1,9 @@
-package org.diosoft.spring.lesson4;
+package org.diosoft.spring.lesson4.profiles;
 
 import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.context.ApplicationListener;
 
-public class PersonEventListener implements ApplicationListener<PersonEvent>, BeanNameAware {
+class PersonEventListener implements ApplicationListener<PersonEvent>, BeanNameAware {
 
     String name;
 

@@ -1,4 +1,4 @@
-package org.diosoft.spring.lesson4.profiles;
+package org.diosoft.spring.lesson4;
 
 import org.springframework.context.annotation.ConditionContext;
 import org.springframework.context.annotation.ConfigurationCondition;
@@ -15,6 +15,6 @@ public class PropertyCondition implements ConfigurationCondition {
 
     @Override
     public boolean matches(ConditionContext conditionContext, AnnotatedTypeMetadata annotatedTypeMetadata) {
-        return Boolean.valueOf(conditionContext.getEnvironment().getProperty("enable.postman2"));
+        return Boolean.valueOf(conditionContext.getEnvironment().getProperty("enable.bean"));
     }
 }

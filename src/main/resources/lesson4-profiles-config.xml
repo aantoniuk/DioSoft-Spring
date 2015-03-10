@@ -11,11 +11,11 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="postman" class="org.diosoft.spring.lesson4.Postman"></bean>
+    <bean id="postman" class="org.diosoft.spring.lesson4.profiles.Postman"></bean>
 
 
     <bean class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer">
-        <property name="location" value="lesson4-profiles.properties"></property>
+        <property name="location" value="lesson4.properties"></property>
     </bean>
 
     <util:list id="personNameList">
@@ -24,15 +24,15 @@
         <value>${third}</value>
     </util:list>
 
-    <bean id="postman2" class="org.diosoft.spring.lesson4.Postman2">
+    <bean id="postman2" class="org.diosoft.spring.lesson4.profiles.Postman2">
         <constructor-arg ref="personNameList"></constructor-arg>
     </bean>
 
     <beans profile="dev">
-        <bean id="personEventListener1" class="org.diosoft.spring.lesson4.PersonEventListener"></bean>
+        <bean id="personEventListener1" class="org.diosoft.spring.lesson4.profiles.PersonEventListener"></bean>
     </beans>
 
     <beans profile="qa">
-        <bean id="personEventListener2" class="org.diosoft.spring.lesson4.PersonEventListener"></bean>
+        <bean id="personEventListener2" class="org.diosoft.spring.lesson4.profiles.PersonEventListener"></bean>
     </beans>
 </beans>

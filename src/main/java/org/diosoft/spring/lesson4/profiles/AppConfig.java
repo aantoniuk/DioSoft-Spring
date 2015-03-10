@@ -1,8 +1,6 @@
 package org.diosoft.spring.lesson4.profiles;
 
-import org.diosoft.spring.lesson4.PersonEventListener;
-import org.diosoft.spring.lesson4.Postman;
-import org.diosoft.spring.lesson4.Postman2;
+import org.diosoft.spring.lesson4.PropertyCondition;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.*;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
@@ -16,8 +14,8 @@ import java.util.List;
  * Created by tolikgag on 09.03.2015.
  */
 @Configuration
-@PropertySource("classpath:/lesson4-profiles.properties")
-public class AppConfig {
+@PropertySource("classpath:/lesson4.properties")
+class AppConfig {
 
     @Autowired
     Environment  env;

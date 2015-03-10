@@ -1,9 +1,10 @@
-package org.diosoft.spring.lesson4;
+package org.diosoft.spring.lesson4.profiles;
 
+import org.diosoft.spring.lesson4.Person;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
 
-public class Postman implements ApplicationEventPublisherAware{
+class Postman implements ApplicationEventPublisherAware{
 
     protected ApplicationEventPublisher applicationEventPublisher;
 

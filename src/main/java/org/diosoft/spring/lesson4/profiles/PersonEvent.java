@@ -1,8 +1,9 @@
-package org.diosoft.spring.lesson4;
+package org.diosoft.spring.lesson4.profiles;
 
+import org.diosoft.spring.lesson4.Person;
 import org.springframework.context.ApplicationEvent;
 
-public class PersonEvent extends ApplicationEvent {
+class PersonEvent extends ApplicationEvent {
 
     public PersonEvent(Person person) {
         super(person);

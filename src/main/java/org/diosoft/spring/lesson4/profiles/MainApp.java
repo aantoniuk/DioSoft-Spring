@@ -1,13 +1,11 @@
 package org.diosoft.spring.lesson4.profiles;
 
 import org.diosoft.spring.lesson4.Person;
-import org.diosoft.spring.lesson4.Postman;
-import org.diosoft.spring.lesson4.Postman2;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.core.env.AbstractEnvironment;
 
-public class MainApp {
+class MainApp {
 
 	public static void main(String[] args) {
         // default profiles
@@ -34,6 +32,9 @@ public class MainApp {
                 System.out.println("Complex Postman");
                 Postman2 postman2 = context.getBean("postman2", Postman2.class);
                 postman2.notifyObservers();
+        }
+        else {
+                System.out.println("Postman2 Bean doesn't load");
         }
     }
 }
