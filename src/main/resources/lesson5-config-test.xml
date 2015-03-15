@@ -13,17 +13,23 @@
 
     <context:annotation-config></context:annotation-config>
 
-    <bean id="postman" class="org.diosoft.spring.lesson5.spel.Postman"></bean>
+    <beans profile="qa">
+        <bean id="person" class="org.diosoft.spring.lesson5.spel.Person"></bean>
+    </beans>
 
-    <bean class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer">
-        <property name="location" value="lesson3.properties"></property>
-    </bean>
+    <beans profile="dev">
+        <bean id="postman" class="org.diosoft.spring.lesson5.spel.Postman"></bean>
 
-    <util:list id="personNameList">
-        <value>${first}</value>
-        <value>${second}</value>
-        <value>${third}</value>
-        <value>#{systemProperties['user.country']}</value>
-    </util:list>
+        <bean class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer">
+            <property name="location" value="lesson3.properties"></property>
+        </bean>
+
+        <util:list id="personNameList">
+            <value>${first}</value>
+            <value>${second}</value>
+            <value>${third}</value>
+            <value>#{systemProperties['user.country']}</value>
+        </util:list>
+    </beans>
 
 </beans>

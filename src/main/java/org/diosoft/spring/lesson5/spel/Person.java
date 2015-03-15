@@ -11,6 +11,10 @@ class Person implements org.diosoft.spring.lesson5.spel.Observer {
 		this.name = name;
 	}
 
+	public String getName() {
+		return name;
+	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -18,5 +22,12 @@ class Person implements org.diosoft.spring.lesson5.spel.Observer {
 	@Override
 	public void notify(Message message) {
 		System.out.println(message.getMessage() + ", " + name);
+	}
+
+	@Override
+	public String toString() {
+		return "Person{" +
+				"name='" + name + '\'' +
+				'}';
 	}
 }

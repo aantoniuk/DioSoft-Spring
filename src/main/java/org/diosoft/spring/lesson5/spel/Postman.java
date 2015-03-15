@@ -13,6 +13,10 @@ class Postman implements org.diosoft.spring.lesson5.spel.Subject {
 	private List<String> observerNamesFromProperties;
 	private List<Observer> observers = new ArrayList<Observer>();
 
+	public List<Observer> getObservers() {
+		return observers;
+	}
+
 	public Postman() {
 	};
 
