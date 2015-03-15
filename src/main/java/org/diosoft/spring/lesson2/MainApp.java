@@ -5,7 +5,7 @@ import org.springframework.beans.factory.support.GenericBeanDefinition;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class MainApp {
+class MainApp {
 
 	public static void main(String[] args) {
 		

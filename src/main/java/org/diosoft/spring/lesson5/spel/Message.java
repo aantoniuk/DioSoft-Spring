@@ -1,4 +1,4 @@
-package org.diosoft.spring.lesson2;
+package org.diosoft.spring.lesson5.spel;
 
 class Message {
 

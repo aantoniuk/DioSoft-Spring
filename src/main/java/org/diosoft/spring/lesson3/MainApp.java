@@ -3,7 +3,7 @@ package org.diosoft.spring.lesson3;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 
-public class MainApp {
+class MainApp {
 
 	public static void main(String[] args) {
             // ApplicationContext with XML

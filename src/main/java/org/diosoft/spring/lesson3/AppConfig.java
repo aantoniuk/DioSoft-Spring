@@ -16,7 +16,7 @@ import java.util.List;
  */
 @Configuration
 @PropertySource("classpath:/lesson3.properties")
-public class AppConfig {
+class AppConfig {
 
     @Autowired
     Environment  env;

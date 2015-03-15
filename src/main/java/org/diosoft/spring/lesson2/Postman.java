@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationContextAware;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Postman implements Subject, BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
+class Postman implements Subject, BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
 
 	private List<Observer> observers = new ArrayList<Observer>();
 

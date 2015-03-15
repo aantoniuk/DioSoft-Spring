@@ -1,4 +1,4 @@
-package org.diosoft.spring.lesson2;
+package org.diosoft.spring.lesson5.spel;
 
 interface Subject {
 	// methods to register and unregister observers

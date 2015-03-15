@@ -1,6 +1,6 @@
 package org.diosoft.spring.lesson3;
 
-public class Person {
+class Person {
 
 	private String name;
 

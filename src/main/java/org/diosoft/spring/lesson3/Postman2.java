@@ -3,7 +3,7 @@ package org.diosoft.spring.lesson3;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Postman2 extends Postman {
+class Postman2 extends Postman {
     private List<Person> persons = new LinkedList<Person>();
 
     public Postman2(){
