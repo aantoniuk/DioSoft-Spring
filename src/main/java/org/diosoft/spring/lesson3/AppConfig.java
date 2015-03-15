@@ -18,6 +18,7 @@ import java.util.List;
 @PropertySource("classpath:/lesson3.properties")
 class AppConfig {
 
+    //local code review (vtegza): should be private @ 15.03.15
     @Autowired
     Environment  env;
 

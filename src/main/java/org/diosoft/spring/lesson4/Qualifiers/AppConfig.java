@@ -1,3 +1,4 @@
+//local code review (vtegza): fix package name (on FS) - should not start with over case.. will not be visible FAT @ 15.03.15
 package org.diosoft.spring.lesson4.qualifiers;
 
 import org.diosoft.spring.lesson4.ObserverHelperImpl;

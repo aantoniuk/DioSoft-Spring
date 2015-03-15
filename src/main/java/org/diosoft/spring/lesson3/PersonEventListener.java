@@ -5,6 +5,7 @@ import org.springframework.context.ApplicationListener;
 
 class PersonEventListener implements ApplicationListener<PersonEvent>, BeanNameAware {
 
+    //local code review (vtegza): should be private @ 15.03.15
     String name;
 
     @Override
